@@ -1,12 +1,14 @@
-from sqlalchemy import create_engine
-from sqlalchemy.orm import sessionmaker, declarative_base
+# database.py
 
-DATABASE_URL = "sqlite:///./items.db"
+from sqlalchemy import create_engine  # untuk membuat koneksi ke database
+from sqlalchemy.orm import sessionmaker, declarative_base  # untuk membuat session dan base model
 
-engine = create_engine(
+DATABASE_URL = "sqlite:///./items.db"  # alamat database SQLite
+
+engine = create_engine(  # membuat koneksi aplikasi ke database
     DATABASE_URL, connect_args={"check_same_thread": False}
 )
 
-SessionLocal = sessionmaker(bind=engine)
+SessionLocal = sessionmaker(bind=engine)  # membuat session untuk akses database
 
-Base = declarative_base()
+Base = declarative_base()  # class dasar untuk membuat tabel model

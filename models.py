@@ -1,9 +1,11 @@
-from sqlalchemy import Column, Integer, String
-from database import Base
+# models.py
 
-class Item(Base):
-    __tablename__ = "items"
+from sqlalchemy import Column, Integer, String  # tipe kolom database
+from database import Base  # mengambil Base dari database.py
 
-    id = Column(Integer, primary_key=True, index=True)
-    name = Column(String)
-    description = Column(String)
+class Item(Base):  # membuat model tabel Item
+    __tablename__ = "items"  # nama tabel di database
+
+    id = Column(Integer, primary_key=True, index=True)  # kolom id sebagai primary key
+    name = Column(String)  # kolom untuk nama item
+    description = Column(String)  # kolom untuk deskripsi item
