@@ -23,6 +23,7 @@ Dokumentasi API dapat langsung dilihat melalui **Swagger UI** yang disediakan ot
 ## Struktur Project
 
 fastapi-items/
+
 ├── README.md
 ├── database.py
 ├── models.py
