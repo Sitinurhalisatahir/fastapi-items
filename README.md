@@ -22,6 +22,7 @@ Dokumentasi API dapat langsung dilihat melalui **Swagger UI** yang disediakan ot
 
 ## Struktur Project
 
+```
 fastapi-items/
 
 ├── README.md
@@ -31,7 +32,7 @@ fastapi-items/
 ├── main.py
 ├── items.db
 └── Screenshot Swagger UI.png
-
+```
 
 ## Teknologi yang Digunakan
 
